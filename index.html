@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VietNam Festival</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sparkle-container"></div>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <header>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Thông Tin</a></li>
+            <li><a href="#le" onclick="toggleMenu();">Phần Lễ</a></li>
+            <li><a href="#hoi" onclick="toggleMenu();">Phần Hội</a></li>
+            <li><a href="#lienhe" onclick="toggleMenu();">Liên Hệ</a></li>
+        </ul>
+    </header>
+        <section class="home" id="home">
+                <style>
+                    .heading {
+                        margin-top: 20px;
+                    }
+                    h3 {color: red; font-size: 36px;
+                        text-align: center;
+                        
+                    }
+                    p {
+                        color: white;
+                        text-align: left;
+                        display: flex;
+                        font-size: 26px;
+                    }
+                    
+                    .img {
+                        justify-content: flex-end;
+                        display: flex;
+                        float: right  ;
+                    }
+                </style>
+                <div class="heading">
+                    <h3>Đặc điểm chung của lễ hội Việt Nam</h3>
+                    <div class="content">
+                    <div class="contentBx">
+                        <p>Gắn với tín ngưỡng, tôn giáo và tâm linh: Nhiều lễ hội thờ thần linh, anh hùng dân tộc, tổ tiên hoặc các vị Phật, thánh. </p>
+                        <p> Mang đậm bản sắc văn hóa dân tộc: Lễ hội thể hiện truyền thống uống nước nhớ nguồn, tôn vinh các giá trị đạo đức, lịch sử và văn hóa. </p>
+                        <p> Kết hợp giữa phần lễ và phần hội: </p>
+                        <p> Phần lễ thường gồm dâng hương, tế lễ, rước kiệu, cầu an, cầu phúc.</p>
+                        <p> Phần hội là các hoạt động vui chơi, giải trí như: hát chèo, quan họ, đua thuyền, đấu vật, kéo co...
+                        </p>
+                    </div>
+                    <div class="w50">
+                        <img src="tongquan.jpg" class="img">
+                    </div>
+                </div>
+            </section>
+    <section class="le" id="le"> 
+        <style>
+            .phan1 {
+                color: white;
+                font-size: 30px;
+                font-style: italic;
+                text-align: center;
+            }
+            .gt {
+                color: red;
+                font-size: 36px;
+                text-align: center;
+            }
+            .dd {
+                color: rgb(38, 245, 97);
+                font-size: 30px;
+            }
+            .mucdich {
+                color: white;
+            }
+            .mdtrong {
+                font-size: 20px;
+            }
+            .nghithuc {
+                color: white;
+            }
+            .nt {
+                font-size: 20px;
+                
+            }
+            .icon1 {
+                width: 30%;
+                height: auto;
+                display: flex;
+                float: right; 
+                float: inline-end;
+                text-align: center;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Đổ bóng cho ảnh */
+            }
+        </style>
+        <div class="lehoichung">
+            <h1 class="gt"> Phần Lễ</h1>
+            <h2 class="phan1" > Phần lễ trong lễ hội Việt Nam là phần nghi thức trang nghiêm và quan trọng nhất,<br>
+                 mang tính tâm linh, tín ngưỡng rất rõ nét. Đây là phần thể hiện sự tôn kính, biết ơn với thần linh,<br> tổ tiên, anh hùng dân tộc, 
+                 và cầu mong quốc thái dân an, mùa màng bội thu, gia đình bình an. </h3>
+            <h1 class="dd">▶Đặc điểm của phần lễ trong lễ hội Việt Nam:</h1>
+            <img src="icon1.png" class="icon1">
+            <h2 class="mucdich">I. Mục Đích:</h2>
+            <p class="mdtrong"> Tưởng nhớ và tri ân: tổ tiên, các vị thần, anh hùng dân tộc.<br>
+
+                Cầu nguyện: mưa thuận gió hòa, mùa màng tươi tốt, sức khỏe, bình an, phát đạt.<br>
+                
+                Khẳng định truyền thống đạo lý: “uống nước nhớ nguồn”.
+            <h2 class="nghithuc">II. Các nghi thức phổ biến</h2>
+            
+        </div>
+        <div class="set">
+            <p class="nt">1. Dâng hương, dâng lễ</p>
+                <p class="nt">Người dân hoặc ban tổ chức mang hương, hoa, mâm lễ vật (xôi, gà, bánh chưng, hoa quả...) để dâng lên bàn thờ hoặc miếu/thánh điện.<br>
+
+                    Thường đi kèm với lễ bái, quỳ lạy, khấn vái.</p>
+            <p class="nt">2. Rước kiệu</p>
+                <p class="nt">Một trong những nghi thức quan trọng, tượng trưng cho việc “rước” thần linh/anh hùng về làng.<br>
+
+                    Đoàn rước thường rất trang trọng: kiệu, cờ lọng, nhạc lễ, người mặc trang phục truyền thống.</p>
+            <p class="nt">3. Tế lễ</p>
+                <p class="nt">Diễn ra ở đình, đền, miếu.
+
+                    Có các ban tế lễ gồm các bô lão, chức sắc trong làng, mặc áo tế, làm lễ theo nghi thức truyền thống.<br>
+                    
+                    Có thể có đọc văn tế (bằng chữ Hán – Nôm hoặc quốc ngữ), trình bày công đức của thần.</p>
+            <p class="nt">4. Hô thần nhập tượng / khai quang điểm nhãn</p>
+                <p class="nt">Dành cho các lễ hội rước tượng, rước linh vật.<br>
+
+                    Gọi thần linh “nhập” vào tượng để bắt đầu nghi lễ.</p>
+            <p class="nt">5. Phóng sinh, cầu an, cầu siêu (trong lễ hội tôn giáo)</p>
+                <p class="nt">Đặc biệt ở lễ Phật, chùa chiền: thả chim cá, tụng kinh, dâng sớ cầu siêu, làm lễ cầu bình an cho gia đình, cộng đồng</p>
+
+            </p>
+            <div class="content">
+                <button class="view-more-btn" id="view-more-btn">Xem Ảnh</button>
+                    <script src="script.js"></script>
+            </div>
+            <div class="content2">
+                    <div class="more-content" style="display: none;">
+                        <style>
+                            .cap-dang {
+                                color: white;
+                                font-size: 24px;
+                                margin-top: 10px;
+
+                            }
+                            .cap-ruoc {
+                                color: white;
+                                font-size: 24px;
+                                margin-top: 10px;
+
+                            }
+                            .cap-le {
+                                color: white;
+                                font-size: 24px;
+                            }
+                            .ruoc {
+                                margin-left: -80px;
+                            }
+                            .tele {
+                                margin-left: -700px;
+                            }
+                            .d1 {
+                                width: 80%;
+                                height: auto;
+                            }
+                            .d2 {
+                                width: 80%;
+                                height: auto;
+                            }
+                            .r1 {
+                                width: 37%;
+                                height: auto;
+
+                            }
+                            .r2 {
+                                width: 37%;
+                                height: auto;
+                            }
+                            .t1 {
+                                width: 80%;
+                                height: auto;
+                            }
+                            .t2 {
+                                width: 80%;
+                                height: auto;
+                            }
+                        </style>   
+                        <div class="dang">
+                            <img src="danghuong1.jpg" class="d1" style="display: flex;">
+                            <img src="danghuong2.jpg" class="d2" style="display: flex;">
+                            <a href="http://baodantoc.vn/le-dang-huong-tuong-nho-tri-an-cong-duc-to-mau-au-co-1674904189559.htm" target="_blank" class="cap-dang">Ảnh Dâng Hương</a>
+                        </div>
+
+                        <div class="ruoc">
+                            <img src="ruockieu1.jpg" class="r1" style="display: flex;">
+                            <img src="ruockieu2.jpg" class="r2" style="display: flex;">
+                            <a href="https://vov.vn/van-hoa/dac-sac-le-ruoc-kieu-ve-den-hung-post935597.vov" target="_blank" class="cap-ruoc"> Ảnh Rước Kiệu</a>                        
+                        </div>
+
+                        <div class="tele">
+                            <img src="tele1.jpg" class="t1" style="display: flex;">
+                            <img src="tele2.jpg" class="t2" style="display: flex;">
+                            <a href="https://baoquangninh.vn/doc-dao-te-le-tren-dao-ha-nam-2262605.html" target="_blank" class="cap-le">Ảnh Tế Lễ</a>                        </div>
+                    </div>
+            </div>
+        </div>    
+    </section>  
+
+    <section class="hoi" id="hoi">
+        <style>
+            .tt {
+                padding: 10px;
+            }
+            .padhoi {
+                color: red;
+                font-size: 36px;
+                text-align: center;
+            }
+            .trhoi {
+                color: lightgreen;;
+            }
+            .yn {
+                padding: 10px;
+                font-size: 24px;
+            
+            }
+            .hd {
+                padding: 10px;
+                font-size: 24px;
+                text-align: left;
+                margin-top: -28px;
+            }
+            .anhdv {
+                margin-top: -28px;
+                padding-left: 15px;
+            }
+            .anhhat {
+                margin-top: -20px;
+                padding-left: 15px;
+            }
+            .thitai {
+                margin-top: -20px;
+                padding-left: 15px;
+            }
+            .danhdu {
+                width: 35%;
+                height: auto;
+                float: left;
+                text-align: center;
+            }
+            .dauvat {
+                width: 41.5%;
+                height: auto;
+                text-align: center;
+                padding-left: 10px;
+            }
+            .hatcheo {
+                width: 40%;
+                height: auto;
+                text-align: center;
+            
+            }
+            .roi {
+                width: 37.1%;
+                height: auto;
+                text-align: center;
+            }
+            .thoicom {
+                width: 35%;
+                height: auto;
+            }
+            .duathuyen {
+                width: 45.5%;
+                height: auto;
+            }
+            .cpln {
+                margin-top: -20px;
+                padding-left: 10px;
+            }
+            .chophien {
+                width: 44.6%;
+                height: auto;
+            }
+            .langnghe {
+                width: 40%;
+                height: auto;
+            }
+        </style>
+        <div class="tt">
+            <h1 class="padhoi">Phần Hội</h1>
+            <h2 class="trhoi">▶Ý Nghĩa:</h2>
+                <p class="yn">Gắn kết cộng đồng: Là dịp người dân tụ họp, giao lưu, gắn bó tinh thần làng xã.<br>
+
+                  Bảo tồn văn hóa: Thể hiện bản sắc văn hóa qua trò chơi dân gian, hát múa, ẩm thực, phong tục...<br>
+                
+                  Thỏa mãn nhu cầu tinh thần: Sau phần lễ trang nghiêm là không khí vui tươi, phấn khởi, góp phần tạo sự hài hòa giữa tâm linh và đời sống thường nhật.
+                </p>
+            <h2 class="trhoi">▶Các Hoạt Động Phổ Biến:</h2>
+                <p class="hd">
+                    Trò chơi dân gian: Đánh đu, kéo co, đấu vật, chọi gà, thi nấu ăn, thi cấy lúa, thả diều…
+                </p>   
+                <div class="anhdv">
+                    <img src="danhdu.jpg" class="danhdu">
+                    <img src="dauvat.jpg" class="dauvat">
+                </div> 
+                <p>
+                    Biểu diễn nghệ thuật: Hát chèo, tuồng, quan họ, cải lương, múa rối nước…
+                </p>
+                <div class="anhhat">
+                    <img src="hatcheo.webp" class="hatcheo">
+                    <img src="roinuoc.png" class=" roi">
+                </div>
+                <p>
+                    Thi tài: Thi người đẹp, thi thơ, thi thổi cơm, đua thuyền…
+                </p>
+                <div class="thitai">
+                    <img src="thoicom.png" class="thoicom">
+                    <img src="duathuyen.jpg" class="duathuyen">
+                </div>
+                <p>
+                    Chợ phiên/làng nghề: Giới thiệu sản phẩm truyền thống, quảng bá văn hóa địa phương
+                </p>
+                <div class="cpln">
+                    <img src="chophien.jpg" class="chophien">
+                    <img src="langnghe.png" class="langnghe">
+
+                </div>
+        </div>
+    </section>
+
+    <section class="lienhe" id="lienhe">
+        <style>
+            .lhct {
+                color: red;
+                text-align: center;
+                font-size: 36px;
+            }
+            .ttlh {
+                padding-left: 20px;
+                display: block;
+            }
+        </style>
+            <div class="heading white">
+                <h2 class="lhct">Liên Hệ</h2>
+                <div class="ttlh">
+                    <p class="sdt">Số Điện Thoại: 03xxxxxx12</p>
+                    <p class="mail">Mail: abcxyz123@gmail.com</p>
+                    <p class="diachi">Địa Chỉ: 123, ABC, XYZ, Hà Nội</p>
+                </div>
+            </div>
+                <div class="formBx">
+                    <form>
+                        <h3>Đóng Góp Ý Kiến</h3>
+                        <input type="text" name="" placeholder="Họ Và Tên">
+                        <input type="email" name="" placeholder="Mail Của Bạn">
+                        <textarea placeholder="Nhập văn bản..."></textarea>
+                        <input type="submit" value="Gửi Đi">
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        <div class="copyright">
+            <style>
+                .pph {
+                    margin-left: 15px;
+                }
+            </style>
+            <p class="pph">©PPH - 12A11 </p>
+        </div>
+
+    </section>
+                  
+
+                  
+                  
+
+</body>
+</html>

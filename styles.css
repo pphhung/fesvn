@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('background.png'); /* Đường dẫn đến hình ảnh nền */
+    background-attachment: fixed;
+    background-position: center; /* Căn giữa hình ảnh */
+    align-items: center; /* Căn giữa nội dung */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    position: relative; /* Để sử dụng cho lớp phủ */
+} 
+
+.sparkle-container {
+    position: absolute;
+    pointer-events: none; /* Không cho phép tương tác với các phần tử lấp lánh */
+}
+.sparkle {
+    position: absolute;
+    width: 2px; /* Chiều rộng của hạt */
+    height: 5px; /* Chiều cao của hạt */
+    border-radius: 5px; /* Bo tròn các góc */
+    opacity: 30;
+    pointer-events: none;
+    animation: sparkle-animation 1s forwards;
+    transform: translate(-50%, -50%); /* Giảm lệch vị trí */
+}
+
+@keyframes sparkle-animation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Reset mặc định */
+.menu {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;         /* Hiển thị ngang hàng, dùng "column" nếu bạn muốn dọc */
+    justify-content: center;
+    gap: 20px;             /* Khoảng cách giữa các mục */
+    background-color: #111; /* Màu nền menu */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    right: 5px;
+    left: 5px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .menu li a:hover {
+    background-color: #fc4545;  /* Màu khi hover */
+    color: #fff;
+  }
+  .menu li a.active {
+    background-color: #7873f5;
+    color: #fff;
+  }
+  .heading {
+    padding-top: 10px;
+  }
+
+  .content {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .contentBx {
+    flex: 1;
+    padding: 20px;
+    color: white;
+  }
+  
+  .w50 {
+    flex: 1;
+  }
+  
+  .img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Đổ bóng cho ảnh */
+    border-radius: 15px;
+    margin-left: 10px;
+  }
+  .le {
+    padding: 20px;
+  }
+  button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Không có viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột */
+    overflow: hidden;
+    align-self: start;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    white-space: nowrap;
+}
+button:hover {
+  background-color: #544efa; /* Màu nền khi hover */
+}
+.content2 {
+  position: relative;
+  margin: auto;
+}
+.more-content {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.contact
+{
+    background: #111;
+
+}
+.formBx{
+    min-width: 60%;
+}
+.formBx form{
+    display: flex;
+    flex-direction: column;
+}
+.formBx form h3, .contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500
+    margin-bottom 10px;
+}
+.formBx form input,.formBx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #000000;
+    color: #fff;
+    resize: none;
+}
+.formBx {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 300px;
+  height: auto;
+  border-radius: 8px; /* Bo góc cho form */
+  background-color: rgb(61, 61, 61); /* Màu nền cho form */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+}
+.formBx form{
+  display: flex;
+  flex-direction: column;
+}
+.formBx form textarea{
+    min-height: 200px;
+}
+.formBx form input::placeholder,.formBx form textarea::placeholder{
+    color: #999;
+}
+.formBx form input[type="submit"]
+{
+    padding-left: 15px;
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 15px;
+}
+
+.copyright{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    
+}
